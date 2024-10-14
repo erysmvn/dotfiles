@@ -1,1 +1,1 @@
->> brasically a "backup" for shell config <<
+>> brasically a "backup" for shell config
