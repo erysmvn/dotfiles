@@ -1,5 +1,5 @@
-syntax on
-"colorscheme desert"
+syntax on 	      " turn on synstax highlighting
+"colorscheme desert"  " i don't actual use this theme but it's kinda cool
 
 let &t_SI = "\e[4 q"  " Insert mode - underline
 let &t_SR = "\e[4 q"  " Replace mode - underline
