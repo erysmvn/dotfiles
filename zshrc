@@ -110,14 +110,14 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/erysvmn/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/username/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/erysvmn/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/erysvmn/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/username/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/username/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/erysvmn/miniconda3/bin:$PATH"
+        export PATH="/Users/username/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -165,11 +165,11 @@ alias python=/usr/bin/python3
 alias python="python3"
 alias reload="omz reload"
 alias ls="colorls"
-alias sort="du -sh -- * | sort -rh"
+alias ssort="du -sh -- * | sort -rh"
 alias q="exit"
 
 # mysql
-export PATH="$PATH:/Users/erysvmn/Applications/XAMPP/xamppfiles/bin"
+export PATH="$PATH:/Users/username/Applications/XAMPP/xamppfiles/bin"
 export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/bin:/usr/local/bin:$PATH"
@@ -187,7 +187,7 @@ export STARSHIP_CONFIG=~/.config/Starship/starship.toml
 
 # Zoxide
 eval "$(zoxide init zsh)"
-alias cd="z"
+alias cd="z" # to deal with muscle memory
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
@@ -201,8 +201,10 @@ zinit light zsh-users/zsh-autosuggestions
 
 # PATH=~/.console-ninja/.bin:$PATHsource /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zzsh
 
-export PATH=$PATH:/Users/erysvmn/.spicetify
+# Spicetify
+export PATH=$PATH:/Users/username/.spicetify # better spotify
 
+# llvm
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export CC="/usr/local/opt/llvm/bin/clang"
 export CXX="/usr/local/opt/llvm/bin/clang++"
